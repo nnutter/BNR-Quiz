@@ -15,6 +15,10 @@
 		086C154915CCAAE5007954CA /* QuizAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 086C154815CCAAE5007954CA /* QuizAppDelegate.m */; };
 		086C154C15CCAAE6007954CA /* QuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086C154B15CCAAE6007954CA /* QuizViewController.m */; };
 		086C154F15CCAAE6007954CA /* QuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 086C154D15CCAAE6007954CA /* QuizViewController.xib */; };
+		086C155615CCBA2E007954CA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 086C155515CCBA2E007954CA /* Icon.png */; };
+		086C155815CCBA32007954CA /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086C155715CCBA32007954CA /* Icon@2x.png */; };
+		086C155B15CCBADD007954CA /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 086C155A15CCBADD007954CA /* Default@2x.png */; };
+		086C155D15CCBB84007954CA /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 086C155C15CCBB84007954CA /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		086C154A15CCAAE6007954CA /* QuizViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuizViewController.h; sourceTree = "<group>"; };
 		086C154B15CCAAE6007954CA /* QuizViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizViewController.m; sourceTree = "<group>"; };
 		086C154E15CCAAE6007954CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/QuizViewController.xib; sourceTree = "<group>"; };
+		086C155515CCBA2E007954CA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		086C155715CCBA32007954CA /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		086C155A15CCBADD007954CA /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		086C155C15CCBB84007954CA /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +58,7 @@
 		086C152915CCAAE5007954CA = {
 			isa = PBXGroup;
 			children = (
+				086C155915CCBA47007954CA /* Resources */,
 				086C153E15CCAAE5007954CA /* Quiz */,
 				086C153715CCAAE5007954CA /* Frameworks */,
 				086C153515CCAAE5007954CA /* Products */,
@@ -96,6 +105,17 @@
 				086C154615CCAAE5007954CA /* Quiz-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		086C155915CCBA47007954CA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				086C155C15CCBB84007954CA /* Default.png */,
+				086C155A15CCBADD007954CA /* Default@2x.png */,
+				086C155515CCBA2E007954CA /* Icon.png */,
+				086C155715CCBA32007954CA /* Icon@2x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +171,10 @@
 			files = (
 				086C154315CCAAE5007954CA /* InfoPlist.strings in Resources */,
 				086C154F15CCAAE6007954CA /* QuizViewController.xib in Resources */,
+				086C155615CCBA2E007954CA /* Icon.png in Resources */,
+				086C155815CCBA32007954CA /* Icon@2x.png in Resources */,
+				086C155B15CCBADD007954CA /* Default@2x.png in Resources */,
+				086C155D15CCBB84007954CA /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

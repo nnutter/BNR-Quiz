@@ -14,21 +14,42 @@
 
 @implementation QuizViewController
 
-- (void)viewDidLoad
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        questions = [NSMutableArray new];
+        answers = [NSMutableArray new];
+        
+        [questions addObject:@"What is 7 + 7?"];
+        [answers addObject:@"14"];
+        
+        [questions addObject:@"What is the capital of Vermont?"];
+        [answers addObject:@"Montpelier"];
+        
+        [questions addObject:@"From what is cognac made?"];
+        [answers addObject:@"Grapes"];
+    }
+    
+    return self;
 }
 
-- (void)viewDidUnload
+- (IBAction)showQuestion:(id)sender
 {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
+    currentQuestionIndex++;
+    currentQuestionIndex = currentQuestionIndex % [questions count];
+    
+    NSString *question = [questions objectAtIndex:currentQuestionIndex];
+    NSLog(@"displaying question: %@", question);
+    [questionField setText:question];
+    [answerField setText:@"???"];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+- (IBAction)showAnswer:(id)sender
 {
-    return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+    NSString *answer = [answers objectAtIndex:currentQuestionIndex];
+    NSLog(@"displaying answer: %@", answer);
+    [answerField setText:answer];
 }
 
 @end
